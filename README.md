@@ -7,5 +7,5 @@
 Flask，Crypto，werkzeug，qrcode
 
 ## 使用方法
-安装对应的库后，`python server.py
+安装对应的库后，`python serv.py
 建议更改密钥
