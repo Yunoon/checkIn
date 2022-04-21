@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui/css/layui.css" />
+</head>
+
+<body>
+    <script src="https://www.layuicdn.com/layui/layui.js"></script>
+
+    <div class="layui-container">
+        <div>
+            <h1>扫码签到</h1>
+            <h1>刷新时间：<span id="tim">30</span></h1>
+            <img src="http://172.24.93.172:8080/getPic">
+        </div>
+    </div>
+
+    <script>
+        var timName = document.getElementById('tim');
+
+        var t = 30;
+
+        var timer = setInterval(function() {
+
+            timName.innerHTML = t;
+            t--;
+            if (t < 0) {
+                clearInterval(timer);
+            }
+
+        }, 1000)
+    </script>
+
+</body>
+
+</html>
