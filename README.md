@@ -1,7 +1,7 @@
 # checkIn
 
 ## 前言
-被迫写的签到系统
+被迫写的扫码签到系统
 
 ## 使用主要框架
 Flask，Crypto，werkzeug，qrcode
